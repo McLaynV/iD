@@ -69,6 +69,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Fix `+` symbol appearing in changeset comments from external tools ([#10766], thanks [@k-yle])
 * Fix `destination_sign` relations from being corrupted when splitting a way ([#10646], thanks [@k-yle])
 * Fix combobox dropdown menu sticking around under certain conditions (e.g. while editing the role of a relation member and deselecting a feature #10319)
+* Fix the relation role dropdown not working ([#10645], thanks [@k-yle])
 #### :earth_asia: Localization
 * Add `housename` to address format in Bolivia ([#10727])
 #### :hourglass: Performance
@@ -86,6 +87,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#9635]: https://github.com/openstreetmap/iD/pull/9635
 [#10003]: https://github.com/openstreetmap/iD/pull/10003
 [#10618]: https://github.com/openstreetmap/iD/pull/10618
+[#10645]: https://github.com/openstreetmap/iD/pull/10645
 [#10646]: https://github.com/openstreetmap/iD/pull/10646
 [#10648]: https://github.com/openstreetmap/iD/pull/10648
 [#10720]: https://github.com/openstreetmap/iD/issues/10720
