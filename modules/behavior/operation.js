@@ -15,6 +15,12 @@ export function behaviorOperation(context) {
         var disabled = _operation.disabled();
 
         if (disabled) {
+            const interrupt = _operation.interrupts?.[disabled];
+            if (interrupt) {
+                interrupt();
+                return;
+            }
+
             context.ui().flash
                 .duration(4000)
                 .iconName('#iD-operation-' + _operation.id)
