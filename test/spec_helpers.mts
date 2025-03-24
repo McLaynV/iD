@@ -21,6 +21,8 @@ for (const [key, value] of Object.entries(envs)) {
   Reflect.set(global, key, JSON.parse(value));
 }
 
+Object.defineProperty(navigator, 'languages', { get: () => ['en-US'] });
+
 // the 'happen' library explicitly references `window` when creating an event,
 // but we need to use jsdom's window, so we have to patch initEvent.
 const { initMouseEvent } = MouseEvent.prototype;

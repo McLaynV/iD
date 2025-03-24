@@ -266,6 +266,13 @@ describe('iD.util', function() {
         it('returns the name if tagged with a name', function() {
             expect(iD.utilDisplayName({tags: {name: 'East Coast Greenway'}})).to.eql('East Coast Greenway');
         });
+        it('uses localised name tags if available', () => {
+            // since we can't cutsomise the locale per-testcase, we need this santity check first:
+            expect(iD.localizer.localeCodes()).toStrictEqual(['en-US', 'en']);
+
+            expect(iD.utilDisplayName({ tags: { 'name:en': 'A', name: 'B' } })).toBe('A');
+            expect(iD.utilDisplayName({ tags: { 'name:en-US': 'A', 'name:en': 'B', name: 'C' } })).toBe('A');
+        });
         it('returns just the name for non-routes', function() {
             expect(iD.utilDisplayName({tags: { name: 'Abyssinian Room', ref: '260-115' }})).to.eql('Abyssinian Room');
         });
