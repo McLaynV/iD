@@ -267,7 +267,7 @@ describe('iD.util', function() {
             expect(iD.utilDisplayName({tags: {name: 'East Coast Greenway'}})).to.eql('East Coast Greenway');
         });
         it('uses localised name tags if available', () => {
-            // since we can't cutsomise the locale per-testcase, we need this santity check first:
+            // since we can't cutsomise the locale per-testcase, we need this sanity check first:
             expect(iD.localizer.localeCodes()).toStrictEqual(['en-US', 'en']);
 
             expect(iD.utilDisplayName({ tags: { 'name:en': 'A', name: 'B' } })).toBe('A');
