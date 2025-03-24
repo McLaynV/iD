@@ -39,7 +39,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 
 #### :sparkles: Usability & Accessibility
 * Allow searching for coordinates in localized number format in search box ([#10805])
-* Improve visibility of oneway arrows for dashed line styles (such as railway lines, foot paths, etc.): they are now rendered such that the arrows seemlessly integrate into the line dashes ([#10849])
+* Improve visibility of oneway arrows for dashed line styles (such as railway lines, foot paths, etc.): they are now rendered such that the arrows seamlessly integrate into the line dashes ([#10849])
 #### :scissors: Operations
 * Fix unexpected behavior of squaring operation on individual vertices ([#10401])
 #### :camera: Street-Level
@@ -57,6 +57,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 * Make features clickable when "Full Fill" rendering style is selected
 * Fix calculation of access field placeholders for multi selections ([#9333])
 #### :earth_asia: Localization
+* Consider language scripts when determining the locale to use ([#10910], thanks [@k-yle])
 * Consider `name:*` tags with the full locale code when labelling features, such as `name:pt-BR` ([#10911], thanks [@k-yle])
 #### :hourglass: Performance
 #### :mortar_board: Walkthrough / Help
@@ -75,6 +76,7 @@ _Breaking developer changes, which may affect downstream projects or sites that 
 [#10843]: https://github.com/openstreetmap/iD/pull/10843
 [#10852]: https://github.com/openstreetmap/iD/issues/10852
 [#10885]: https://github.com/openstreetmap/iD/issues/10885
+[#10910]: https://github.com/openstreetmap/iD/pull/10910
 [#10911]: https://github.com/openstreetmap/iD/pull/10911
 [id-tagging-schema#609]: https://github.com/openstreetmap/id-tagging-schema/issues/609
 [@0xatulpatil]: https://github.com/0xatulpatil
